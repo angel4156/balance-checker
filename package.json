@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "ethereumjs-wallet": "^1.0.2",
+    "ethers": "^6.11.1",
+    "wait": "^0.4.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
