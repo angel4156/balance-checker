@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "ethereumjs-wallet": "^1.0.2",
-    "ethers": "^6.11.1",
+    "ethers": "^6.15.0",
+    "mongoose": "^8.19.3",
     "wait": "^0.4.2"
   },
   "scripts": {
