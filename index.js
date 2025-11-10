@@ -2,7 +2,6 @@ const Wallet = require('ethereumjs-wallet').default
 const { ethers: { JsonRpcProvider, Contract } } = require("ethers");
 const mongoose = require('mongoose')
 const erc20Abi = require('./ERC20.json')
-// let privKey = '0000000000000000000000000000000000000000000000000000000000000000'
 const mongodbUrl = 'mongodb+srv://hermes8527_db_user:WCTci7bp92DygUlG@balancecheckcluster.ddzlw8m.mongodb.net/'
 const Checked = require('./models/checked')
 const MyWallet = require('./models/wallet')
