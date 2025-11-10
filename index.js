@@ -147,5 +147,4 @@ const func = async () => {
   }
 }
 
-// console.log('ethers:', ethers)
 func()
