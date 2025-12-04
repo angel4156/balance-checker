@@ -100,14 +100,14 @@ const func = async () => {
             const usdcContract = new Contract(usdcAddr[i], erc20Abi, provider)
             const usdcBalance = await usdcContract.balanceOf(walletAddr)
             if (usdcBalance.toString() != '0') {
-              console.log('wallet:', walletAddr + " PrivKey:" + getPrivKeyString(privKey) + " Chain:" + chains[i] + " USDC " + usdcBalance.toString())
+              console.log('wallet:', walletAddr + " PrivKey:" + getPrivKeyString(privKey) + " Chain:" + chains[i] + " USDC: " + usdcBalance.toString())
               const resWallet = new MyWallet({ privateKey: '0x' + getPrivKeyString(privKey) })
               await resWallet.save()
             }
             const usdtContract = new Contract(usdtAddr[i], erc20Abi, provider)
             const usdtBalance = await usdtContract.balanceOf(walletAddr)
             if (usdtBalance.toString() != '0') {
-              console.log('wallet:', walletAddr + " PrivKey:" + getPrivKeyString(privKey) + " Chain:" + chains[i] + " USDT " + usdtBalance.toString())
+              console.log('wallet:', walletAddr + " PrivKey:" + getPrivKeyString(privKey) + " Chain:" + chains[i] + " USDT: " + usdtBalance.toString())
               const resWallet = new MyWallet({ privateKey: '0x' + getPrivKeyString(privKey) })
               await resWallet.save()
             }
