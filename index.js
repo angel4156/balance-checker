@@ -62,9 +62,6 @@ const func = async () => {
   const lastVisits = await Checked.find()
   let privKey = Buffer.alloc(32, 0)
   let delay
-  // for (let i = 0; i < 32; ++i) {
-  //   privKey[i] = Math.floor(Math.random() * 256);
-  // }
   if (lastVisits.length > 0) {
     for (let i = 0; i < 32; ++i) {
       privKey[i] = parseInt(lastVisits[0].privateKey.substr(i * 2, 2), 16)
